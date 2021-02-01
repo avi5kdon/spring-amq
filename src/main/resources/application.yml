@@ -1,0 +1,14 @@
+spring:
+  activemq:
+    broker-url: failover:(tcp://broker-amq-hdls-svc.artemis-project.svc.cluster.local)
+    user: admin
+    password: admin
+    in-memory: false
+    non-blocking-redelivery: true
+logging:
+  level:
+    root: info
+management:
+  health:
+    jms:
+      enabled: true
