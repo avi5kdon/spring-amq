@@ -27,7 +27,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class MyBean {
 
-  //  @JmsListener(destination = "TEST")
+   @JmsListener(destination = "TEST")
     public void sayHello(String message) {
         System.out.println(">> Got a message >>"+message);
     }
