@@ -1,6 +1,6 @@
 spring:
   activemq:
-    broker-url: failover:(tcp://broker-amq-hdls-svc.artemis-project.svc.cluster.local)
+    broker-url: ${broker.url}
     user: admin
     password: admin
     in-memory: false
